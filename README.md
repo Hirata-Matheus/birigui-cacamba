@@ -13,7 +13,10 @@ Site em Nuxt 4 para a **Birigui Caçambas**, empresa de locação de caçambas e
 - [Nuxt 4](https://nuxt.com) / Vue 3
 - [@nuxt/image](https://image.nuxt.com) — responsive, optimized images (WebP)
 - [@nuxt/fonts](https://fonts.nuxt.com) — self-hosted Archivo font
+- [@vercel/analytics](https://vercel.com/docs/analytics) — Vercel Web Analytics (observability when deployed on Vercel)
 - Node.js 24 (see `.nvmrc`)
+
+> **Note:** `@vercel/analytics` declares a peer dependency on `vue-router@^4`, while Nuxt 4 ships `vue-router@^5`. Since this project doesn't use the package's Vue-specific integration, the peer conflict is harmless and is silenced project-wide via `.npmrc` (`legacy-peer-deps=true`), so a plain `npm install` works without extra flags.
 
 ## Pages
 
